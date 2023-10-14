@@ -1,0 +1,175 @@
+/* Container */
+.ubutton-button-container {
+  position: relative;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+/* Button Styles */
+.ubutton-button {
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-bottom: 2px;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Dropdown List Styles */
+.ubutton-button-list {
+  border-radius: 5px !important;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 180%;
+  text-align: left;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px !important;
+}
+.ubutton-button-list li {
+  padding: 10px;
+  display: flex;
+  background: transparent;
+  align-items: center;
+}
+
+.ubutton-button-list li:last-child {
+  border-bottom: none;
+}
+.ubutton-button-list li a {
+  text-decoration: none;
+}
+.ubutton-button-list img {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+
+/* Themes */
+.default .ubutton-button,
+.default .ubutton-button-list li a {
+  color: #333333;
+}
+.default .ubutton-button,
+.default .ubutton-button-list {
+  background-color: #ededed;
+}
+
+.dark .ubutton-button,
+.dark .ubutton-button-list li a {
+  color: #ffffff;
+}
+.dark .ubutton-button,
+.dark .ubutton-button-list {
+  background-color: #333333;
+}
+.light .ubutton-button,
+.light .ubutton-button-list li a {
+  color: #333333;
+}
+.light .ubutton-button,
+.light .ubutton-button-list {
+  background-color: #fff;
+  border: 1px solid #333333;
+}
+/* Sizes */
+.medium .ubutton-button,
+.medium .ubutton-button-list li a {
+  font-size: 12px;
+}
+
+.small .ubutton-button,
+.small .ubutton-button-list li a {
+  font-size: 12px;
+}
+
+.large .ubutton-button,
+.large .ubutton-button-list li a {
+  font-size: 16px;
+}
+
+.dropdown-icon {
+  margin-left: 5px;
+  font-size: 0.8em; /* Adjust size as needed */
+}
+
+/* Define the initial styles for the logo and cp icons */
+.ubutton-button-container .logo {
+  width: 12px;
+  height: 12px;
+  margin-right: 5px;
+}
+
+/* Initial fill color */
+.ubutton-button-container .logo path {
+  fill: #fc4f37; /* original color */
+}
+.ubutton-button-container .logo {
+  transition: all 0.5s ease; /* smooth transition */
+}
+/* Hover effect for the logo icon */
+.default .ubutton-button:hover .logo path {
+  transform: rotate(360deg); /* 360-degree spin */
+  fill: #000; /* new color (red in this example) */
+}
+/* Hover effect for the logo icon */
+.default .ubutton-button:hover .logo {
+  transform: rotate(360deg); /* 360-degree spin */
+  fill: #000; /* new color (red in this example) */
+}
+.light .ubutton-button:hover .logo path {
+  transform: rotate(360deg); /* 360-degree spin */
+  fill: #000; /* new color (red in this example) */
+}
+/* Hover effect for the logo icon */
+.light .ubutton-button:hover .logo {
+  transform: rotate(360deg); /* 360-degree spin */
+  fill: #000; /* new color (red in this example) */
+}
+.dark .ubutton-button:hover .logo path {
+  transform: rotate(360deg); /* 360-degree spin */
+  fill: #fff; /* new color (red in this example) */
+}
+/* Hover effect for the logo icon */
+.dark .ubutton-button:hover .logo {
+  transform: rotate(360deg); /* 360-degree spin */
+  fill: #fff; /* new color (red in this example) */
+}
+
+.tooltip {
+  visibility: hidden;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  padding: 5px;
+  top: -5px;
+  left: 105%;
+}
+
+.ubutton-button-container .cp {
+  width: 8px;
+  height: 100%;
+  margin-left: 5px;
+}
+.cp.copied .tooltip {
+  visibility: visible;
+}
+.App-section > .dark {
+  background-color: black;
+}

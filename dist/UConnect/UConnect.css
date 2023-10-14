@@ -1,0 +1,55 @@
+.uconnect {
+  display: inline-flex;
+  align-items: center;
+  padding: 0px;
+  background-color: transparent;
+  color: #000;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.uconnect .logo {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+  margin-top: 3px;
+}
+.uconnect.dark {
+  color: white;
+}
+
+.uconnect .logo path {
+  fill: #fc4f37; /* original color */
+}
+.uconnect .logo {
+  transition: all 0.5s ease; /* smooth transition */
+}
+/* Hover effect for the logo icon */
+.default .uconnect:hover .logo path {
+  transform: rotate(360deg); /* 360-degree spin */
+  fill: #000; /* new color (red in this example) */
+}
+/* Hover effect for the logo icon */
+.default .uconnect:hover .logo {
+  transform: rotate(360deg); /* 360-degree spin */
+  fill: #000; /* new color (red in this example) */
+}
+.light .uconnect:hover .logo path {
+  transform: rotate(360deg); /* 360-degree spin */
+  fill: #000; /* new color (red in this example) */
+}
+/* Hover effect for the logo icon */
+.light .uconnect:hover .logo {
+  transform: rotate(360deg); /* 360-degree spin */
+  fill: #000; /* new color (red in this example) */
+}
+.dark .uconnect:hover .logo path {
+  transform: rotate(360deg); /* 360-degree spin */
+  fill: #fff; /* new color (red in this example) */
+}
+/* Hover effect for the logo icon */
+.dark .uconnect:hover .logo {
+  transform: rotate(360deg); /* 360-degree spin */
+  fill: #fff; /* new color (red in this example) */
+}

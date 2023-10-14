@@ -1,0 +1,151 @@
+.uprofilecard-container {
+  position: relative;
+  display: inline-block;
+}
+
+.uprofilecard-button {
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-bottom: 2px;
+  border: none;
+  z-index: 2;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.uprofilecard-button .logo {
+  margin-right: 10px;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+}
+
+.uprofilecard-button .cp {
+  cursor: pointer;
+  margin-left: auto;
+  position: relative;
+}
+
+.uprofilecard {
+  display: flex;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 300px; /* Adjust as needed */
+  padding: 15px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.uprofilecard .text {
+  padding: 0px;
+}
+.uprofilecard img {
+  border-radius: 50%;
+  width: 50px; /* Adjust size as needed */
+  height: 50px;
+}
+.uprofilecard .title {
+  font-weight: bold;
+}
+
+.uprofilecard p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.uprofilecard {
+  text-align: left;
+  display: flex;
+  top: 100%; /* Aligns it right below the button */
+  left: 0; /* Aligns it with the left edge of the button */
+  z-index: 1; /* Ensures it's above other elements */
+}
+.uprofilecard img {
+  margin-right: 15px;
+}
+
+/* Define the initial styles for the logo and cp icons */
+.uprofilecard-container .logo {
+  width: 12px;
+  height: 12px;
+  margin-right: 5px;
+}
+
+/* Initial fill color */
+.uprofilecard-container .logo path {
+  fill: #fc4f37; /* original color */
+}
+.uprofilecard-container .logo {
+  transition: all 0.5s ease; /* smooth transition */
+}
+/* Initial fill color */
+.uprofilecard-container .logo path {
+  fill: #fc4f37; /* original color */
+}
+.uprofilecard-container .logo {
+  transition: all 0.5s ease; /* smooth transition */
+}
+
+/* Hover effect for the logo icon */
+.default .uprofilecard-button:hover .logo path {
+  transform: rotate(360deg); /* 360-degree spin */
+  fill: #000; /* new color (red in this example) */
+}
+/* Hover effect for the logo icon */
+.default .uprofilecard-button:hover .logo {
+  transform: rotate(360deg); /* 360-degree spin */
+  fill: #000; /* new color (red in this example) */
+}
+.light .uprofilecard-button:hover .logo path {
+  transform: rotate(360deg); /* 360-degree spin */
+  fill: #000; /* new color (red in this example) */
+}
+/* Hover effect for the logo icon */
+.light .uprofilecard-button:hover .logo {
+  transform: rotate(360deg); /* 360-degree spin */
+  fill: #000; /* new color (red in this example) */
+}
+.dark .uprofilecard-button:hover .logo path {
+  transform: rotate(360deg); /* 360-degree spin */
+  fill: #fff; /* new color (red in this example) */
+}
+/* Hover effect for the logo icon */
+.dark .uprofilecard-button:hover .logo {
+  transform: rotate(360deg); /* 360-degree spin */
+  fill: #fff; /* new color (red in this example) */
+}
+
+/* Themes */
+.default .uprofilecard-button,
+.default .uprofilecard-button-list li a {
+  color: #333333;
+}
+.default .uprofilecard-button,
+.default .uprofilecard-button-list {
+  background-color: #ededed;
+}
+
+.dark .uprofilecard-button,
+.dark .uprofilecard-button-list li a {
+  color: #ffffff;
+}
+.dark .uprofilecard-button,
+.dark .uprofilecard-button-list {
+  background-color: #333333;
+}
+.light .uprofilecard-button,
+.light .uprofilecard-button-list li a {
+  color: #333333;
+}
+.light .uprofilecard-button,
+.light .uprofilecard-button-list {
+  background-color: #fff;
+  border: 1px solid #333333;
+}
